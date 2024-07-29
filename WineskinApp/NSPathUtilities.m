@@ -7,6 +7,7 @@
 //
 
 #import "NSPathUtilities.h"
+
 #import "NSString+Extension.h"
 #import "NSFileManager+Extension.h"
 
@@ -15,7 +16,7 @@
 +(NSString*)wineskinAppBinaryForPortAtPath:(NSString*)path
 {
     // Used to run the Wineskin App which resides inside Wineskin wrappers
-    return [path stringByAppendingString:@"/Wineskin.app/Contents/MacOS/Wineskin"];
+    return [path stringByAppendingString:@"/Contents/Wineskin.app/Contents/MacOS/Wineskin"];
 }
 +(NSString*)wineskinLauncherBinForPortAtPath:(NSString*)path
 {

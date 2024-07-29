@@ -53,7 +53,8 @@
 	IBOutlet NSButton *extEditButton;
     IBOutlet NSButton *extPlusButton;
 	IBOutlet NSButton *extMinusButton;
-	
+    IBOutlet NSButton *gptkCheckBoxButton;
+    
 	//advanced menu - Tools Tab
 	IBOutlet NSButton *winecfgButton;
 	IBOutlet NSButton *regeditButton;
@@ -72,13 +73,14 @@
 	
 	//advanced menu - Options Tab
 	IBOutlet NSButton *alwaysMakeLogFilesCheckBoxButton;
-    IBOutlet NSButton *setMaxFilesCheckBoxButton;
 	IBOutlet NSButton *mapUserFoldersCheckBoxButton;
 	IBOutlet NSButton *modifyMappingsButton;
 	IBOutlet NSButton *confirmQuitCheckBoxButton;
     IBOutlet NSButton *fntoggleCheckBoxButton;
     IBOutlet NSButton *commandCheckBoxButton;
     IBOutlet NSButton *optionCheckBoxButton;
+    IBOutlet NSButton *esyncCheckBoxButton;
+    IBOutlet NSButton *msyncCheckBoxButton;
     
     //advanced menu - Advanced Tab
     IBOutlet NSButton *WinetricksNoLogsButton;
@@ -86,7 +88,10 @@
     IBOutlet NSButton *winedbgDisabledButton;
     IBOutlet NSButton *geckoCheckBoxButton;
     IBOutlet NSButtonCell *monoCheckBoxButton;
-
+    IBOutlet NSButton *metalhudCheckBoxButton;
+    IBOutlet NSButton *fastmathCheckBoxButton;
+    IBOutlet NSButton *cxmoltenvkCheckBoxButton;
+    
 	//change engine window
 	IBOutlet NSWindow *changeEngineWindow;
 	IBOutlet NSPopUpButton *changeEngineWindowPopUpButton;
@@ -178,6 +183,9 @@
 - (IBAction)installWindowsSoftwareButtonPressed:(id)sender;
 - (IBAction)chooseExeOKButtonPressed:(id)sender;
 - (IBAction)advancedButtonPressed:(id)sender;
+- (IBAction)esyncButtonPressed:(id)sender;
+- (IBAction)msyncButtonPressed:(id)sender;
+
 //Installer window methods
 - (IBAction)chooseSetupExecutableButtonPressed:(id)sender;
 - (IBAction)copyAFolderInsideButtonPressed:(id)sender;
@@ -221,7 +229,6 @@
 
 //advanced menu - Options Tab
 - (IBAction)alwaysMakeLogFilesCheckBoxButtonPressed:(id)sender;
-- (IBAction)setMaxFilesCheckBoxButtonPressed:(id)sender;
 - (IBAction)mapUserFoldersCheckBoxButtonPressed:(id)sender;
 - (IBAction)confirmQuitCheckBoxButtonPressed:(id)sender;
 - (IBAction)modifyMappingsButtonPressed:(id)sender;
@@ -235,6 +242,9 @@
 - (IBAction)winedbgDisabledButtonPressed:(id)sender;
 - (IBAction)geckoButtonPressed:(id)sender;
 - (IBAction)monoButtonPressed:(id)sender;
+- (IBAction)metahudButtonPress:(id)sender;
+- (IBAction)fastmathButtonPress:(id)sender;
+- (IBAction)cxmoltenvkButtonPress:(id)sender;
 
 //Winetricks
 - (IBAction)winetricksButtonPressed:(id)sender;

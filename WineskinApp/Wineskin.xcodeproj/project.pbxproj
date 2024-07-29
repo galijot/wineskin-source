@@ -152,7 +152,6 @@
 		A14ED61426E1021B0022EC36 /* winefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = winefile; sourceTree = "<group>"; };
 		A14ED61526E1021B0022EC36 /* notepad */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = notepad; sourceTree = "<group>"; };
 		A14ED61626E1021B0022EC36 /* winemine */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = winemine; sourceTree = "<group>"; };
-		A184191824946DD7008FDFC7 /* Wineskin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Wineskin.entitlements; sourceTree = "<group>"; };
 		A1902F272897500F0085F0C9 /* realpath */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = realpath; sourceTree = "<group>"; };
 		A1938A2C278168F700B99A8F /* wineserver */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = wineserver; sourceTree = "<group>"; };
 		A1942B2D28C674B600332F75 /* wineskin7z */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = wineskin7z; sourceTree = "<group>"; };
@@ -227,7 +226,6 @@
 		29B97314FDCFA39411CA2CEA /* Wineskin */ = {
 			isa = PBXGroup;
 			children = (
-				A184191824946DD7008FDFC7 /* Wineskin.entitlements */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -571,7 +569,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				CREATE_INFOPLIST_SECTION_IN_BINARY = NO;
-				CURRENT_PROJECT_VERSION = 2.9.2.1;
+				CURRENT_PROJECT_VERSION = 3.0.6;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -588,8 +586,8 @@
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				INFOPLIST_FILE = "Wineskin-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 2.9.2.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.15.4;
+				MARKETING_VERSION = 3.0.6;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.unofficial.wineskin;
 				PRODUCT_NAME = Wineskin;
@@ -610,7 +608,7 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CREATE_INFOPLIST_SECTION_IN_BINARY = NO;
-				CURRENT_PROJECT_VERSION = 2.9.2.1;
+				CURRENT_PROJECT_VERSION = 3.0.6;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;
@@ -626,8 +624,8 @@
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				INFOPLIST_FILE = "Wineskin-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 2.9.2.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.15.4;
+				MARKETING_VERSION = 3.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.unofficial.wineskin;
 				PRODUCT_NAME = Wineskin;
 				PROVISIONING_PROFILE_SPECIFIER = "";

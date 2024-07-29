@@ -7,6 +7,7 @@
 //
 
 #import "NSProgressView.h"
+
 #import "NSThread+Extension.h"
 
 @implementation NSProgressView
