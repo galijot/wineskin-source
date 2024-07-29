@@ -21,37 +21,57 @@
     NSFileManager *fm;
     NSMutableArray *globalFilesToOpen;
     NSString *contentsFold;                         //Contents folder in the wrapper
+    NSString *resourcesFold;                        //Resources folder in the wrapper
 	NSString *frameworksFold;                       //Frameworks folder in the wrapper
+    NSString *gstreamerFold;                        //
+    NSString *sharedsupportFold;                    //SharedSupport folder in the wrapper
 	NSString *appNameWithPath;                      //full path to and including the app name
     NSString *appName;                              //name of our app/wrapper
 	NSString *lockfile;                             //lockfile being used to know if the app is already in use
     NSString *tmpFolder;                            //where tmp files can be made and used to be specific to just this wrapper
     NSString *tmpwineFolder;                        //wine makes its own tmp & wineserver uses it for each wine process
-	NSString *winePrefix;                           //the $WINEPREFIX
-    NSString *pathToWineBinFolder;
-	NSMutableString *theDisplayNumber;              //the Display Number to use
+	NSString *winePrefix;                           //The $WINEPREFIX
+    NSString *pathToWineFolder;                     //
+    NSString *pathToWineBinFolder;                  //
     NSString *wineLogFile;                          //location of wine log file
     NSString *wineTempLogFile;                      //location of wine temp log file
     NSString *x11LogFile;                           //location of x11 log file
 	BOOL fullScreenOption;                          //wether running fullscreen or rootless (RandR is rootless)
-	BOOL useXQuartz;                                //YES if using XQuartz over Mac Driver
 	NSMutableString *fullScreenResolutionBitDepth;	//fullscreen bit depth for X server
 	NSString *currentResolution;                    //the resolution that was running when the wrapper was started
 	NSString *wrapperBundlePID;                     //PID of running wrapper bundle
-	NSMutableString *xQuartzX11BinPID;              //PID of running XQuartz X11.bin (only needed for Override->Fullscreen)
-	NSString *xQuartzBundlePID;                     //PID of running XQuartz bundle (only needed for Override->Fullscreen)
 	BOOL debugEnabled;                              //set if debug mode is being run, to make logs
 	BOOL isIce;                                     //YES if ICE engine being used
     BOOL removeX11TraceFromLog;                     //YES if Wineskin added the X11 trace to winedebug to remove them from the output log
 	NSString *dyldFallBackLibraryPath;              //the path for DYLD_FALLBACK_LIBRARY_PATH
+    NSString *gstPluginPath;                        //GStreamer will scan these paths for GStreamer plug-ins
+    NSString *FASTMATH;                             //
+    NSString *FENCES;                               //Required by DXVK for Apple/NVidia GPUs (better FPS than CPU Emulation)
+    NSString *RESUME;                               //Required by DXVK (wine doesn't handle VK_ERROR_DEVICE_LOST correctly)
+    // (https://github.com/KhronosGroup/MoltenVK/commit/14de07b6f4ba7fb02dbfafd2693d15c557edf0ef)
+    NSString *SEMAPHORE;                            //Required by DXVK to restore prior behaviour
+    NSString *SWIZZLE;                              //Required by DXVK for AMD500/Intel GPUs
+    NSString *HIDEBOOT;
     NSString *wineExecutable;                       //the wine executable that will be used for all launches
     NSString *fontFix;                              //force freetype into using rendering mode from pre 2.7
+
+    NSString *wineEsync;
+    NSString *wineMsync;
+
+    NSString *d3dmetalFold;
+    NSString *appleD3DMETAL;
+    NSString *appleD3EMETAL_FORCE;
+    NSString *metalHUD;
+    NSString *moltenvkcxFold;
+
+    NSString *DOTNET;                               //
+
     BOOL useMacDriver;                              //YES if using Mac Driver over X11
     NSString *wineServerName;                       //the name of the Wineserver we'll be launching
 	int bundleRandomInt1;
     int bundleRandomInt2;
-    
 }
+
 //run system command with output returned
 - (NSString *)systemCommand:(NSString *)command;
 
@@ -85,26 +105,8 @@
 //remove GPU info from Registry
 - (void)removeGPUInfo;
 
-//returns the correct line needed for startXQuartz to get the right quartz-wm started
-- (NSString *)setWindowManager;
-
 //checks if Mac is set in Wine
 - (BOOL)checkToUseMacDriver;
-
-//check if XQuartz is installed
--(BOOL)isXQuartzInstalled;
-
-//starts up XQuartz
-- (void)startXQuartz;
-
-//bring the app to the front most
-- (void)bringToFront:(NSString *)thePid;
-
-//Changes VD Desktop user.reg entries to a given virtual desktop
-- (void)setToVirtualDesktop:(NSString *)resolution;
-
-//Changes VD Desktop user.reg entires to not have a virtual desktop
-- (void)setToNoVirtualDesktop;
 
 //reads a file and passes back contents as an array of strings
 - (NSArray *)readFileToStringArray:(NSString *)theFile;

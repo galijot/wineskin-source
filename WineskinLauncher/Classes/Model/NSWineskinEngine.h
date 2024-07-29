@@ -42,5 +42,7 @@ typedef enum {
 -(BOOL)isCompatibleWithMacDriver;
 -(BOOL)isMacDriverDefaultGraphics;
 -(BOOL)isCompatibleWithLatestFreeType;
+-(BOOL)isCompatibleWith32on64;
+-(BOOL)isWineModernEnough;
 
 @end

@@ -47,7 +47,6 @@
 #define WINESKIN_WRAPPER_PLIST_KEY_IDENTIFIER                    @"CFBundleIdentifier"
 #define WINESKIN_WRAPPER_PLIST_KEY_EXECUTABLE                    @"CFBundleExecutable"
 #define WINESKIN_WRAPPER_PLIST_KEY_SINGLE_CPU                    @"Disable CPUs"
-#define WINESKIN_WRAPPER_PLIST_KEY_MAX_OF_10240_FILES            @"set max files"
 #define WINESKIN_WRAPPER_PLIST_KEY_ASSOCIATIONS                  @"Associations"
 #define WINESKIN_WRAPPER_PLIST_KEY_AUTOMATICALLY_DETECT_GPU      @"Try To Use GPU Info"
 #define WINESKIN_WRAPPER_PLIST_KEY_RUN_PATH                      @"Program Name and Path"
@@ -60,10 +59,21 @@
 #define WINESKIN_WRAPPER_PLIST_KEY_GAMMA_CORRECTION              @"Gamma Correction"
 #define WINESKIN_WRAPPER_PLIST_KEY_INSTALLER_WITH_NORMAL_WINDOWS @"force Installer to normal windows"
 #define WINESKIN_WRAPPER_PLIST_KEY_WINETRICKS_SILENT             @"Winetricks silent"
+#define WINESKIN_WRAPPER_PLIST_KEY_WINETRICKS_FORCE              @"Winetricks force"
 #define WINESKIN_WRAPPER_PLIST_KEY_WINETRICKS_NOLOGS             @"Winetricks disable logging"
 #define WINESKIN_WRAPPER_PLIST_KEY_ENABLE_FNTOGGLE               @"IsFnToggleEnabled"
+#define WINESKIN_WRAPPER_PLIST_KEY_DISABLE_GECKO                 @"Skip Gecko"
 #define WINESKIN_WRAPPER_PLIST_KEY_DISABLE_MONO                  @"Skip Mono"
-#define WINESKIN_WRAPPER_PLIST_KEY_ENABLE_FNTOGGLE               @"IsFnToggleEnabled"
+#define WINESKIN_WRAPPER_PLIST_KEY_SYMLINK_USERS                 @"Symlinks In User Folder"
+#define WINESKIN_WRAPPER_PLIST_KEY_WINEDEBUG                     @"WINEDEBUG"
+#define WINESKIN_WRAPPER_PLIST_KEY_ESYNC                         @"WINEESYNC"
+#define WINESKIN_WRAPPER_PLIST_KEY_MSYNC                         @"WINEMSYNC"
+#define WINESKIN_WRAPPER_PLIST_KEY_D3DMETAL                      @"D3DMETAL"
+#define WINESKIN_WRAPPER_PLIST_KEY_D3DMETAL_FORCE                @"D3DMETAL_FORCE"
+#define WINESKIN_WRAPPER_PLIST_KEY_METAL_HUD                     @"METAL_HUD"
+#define WINESKIN_WRAPPER_PLIST_KEY_UNIX_COMMANDS                 @"CLI Custom Commands"
+#define WINESKIN_WRAPPER_PLIST_KEY_MOLTENVK_FASTMATH             @"FASTMATH"
+#define WINESKIN_WRAPPER_PLIST_KEY_MOLTENVK_CX                   @"MOLTENVKCX"
 
 // Wineskin Plist values
 #define WINESKIN_WRAPPER_PLIST_VALUE_SCREEN_OPTIONS_CURRENT_RESOLUTION @"Current Resolution"
@@ -78,4 +88,4 @@
 #define WINESKIN_LIBRARY_WRAPPER_FOLDER     [NSString stringWithFormat:@"%@/Wrapper",WINESKIN_LIBRARY_FOLDER]
 #define WINESKIN_LIBRARY_ENGINES_FOLDER     [NSString stringWithFormat:@"%@/Engines",WINESKIN_LIBRARY_FOLDER]
 #define WINESKIN_LIBRARY_ENGINE_BASE_FOLDER [NSString stringWithFormat:@"%@/EngineBase",WINESKIN_LIBRARY_FOLDER]
-#define WINESKIN_LIBRARY_ENGINE_RUNTIME [NSString stringWithFormat:@"%@/Runtime",WINESKIN_LIBRARY_FOLDER]
+#define WINESKIN_LIBRARY_ENGINE_RUNTIME     [NSString stringWithFormat:@"%@/Runtime",WINESKIN_LIBRARY_FOLDER]

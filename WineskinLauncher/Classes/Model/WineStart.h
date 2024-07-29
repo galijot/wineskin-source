@@ -19,11 +19,11 @@
     BOOL nonStandardRun;
     BOOL openingFiles;
     NSString *wssCommand;
-    NSString *uLimitNumber;
     NSString *wineDebugLine;
     NSArray *winetricksCommands;
     NSString *wineRunFile;
 }
+
 - (NSArray*)getFilesToRun;
 - (void)setFilesToRun:(NSArray*)input;
 - (NSString*)getWineRunLocation;
@@ -42,12 +42,11 @@
 - (void)setOpeningFiles:(BOOL)input;
 - (NSString*)getWssCommand;
 - (void)setWssCommand:(NSString*)input;
-- (NSString*)getULimitNumber;
-- (void)setULimitNumber:(NSString*)input;
 - (NSString*)getWineDebugLine;
 - (void)setWineDebugLine:(NSString*)input;
 - (NSArray*)getWinetricksCommands;
 - (void)setWinetricksCommands:(NSArray*)input;
 - (NSString*)getWineRunFile;
 - (void)setWineRunFile:(NSString*)input;
+
 @end

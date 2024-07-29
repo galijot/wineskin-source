@@ -19,6 +19,7 @@
 {
     filesToRun = [NSArray arrayWithArray:input];
 }
+
 - (NSString*)getWineRunLocation
 {
     return [wineRunLocation copy];
@@ -28,6 +29,7 @@
 {
     wineRunLocation = [input copy];
 }
+
 - (NSString*)getProgramFlags
 {
     return [programFlags copy];
@@ -37,6 +39,7 @@
 {
     programFlags = [input copy];
 }
+
 - (NSString*)getVdResolution
 {
     return [vdResolution copy];
@@ -46,6 +49,7 @@
 {
     vdResolution = [input copy];
 }
+
 - (NSString*)getCliCustomCommands
 {
     return [cliCustomCommands copy];
@@ -55,6 +59,7 @@
 {
     cliCustomCommands = [input copy];
 }
+
 - (BOOL)isRunWithStartExe
 {
     return runWithStartExe;
@@ -64,6 +69,7 @@
 {
     runWithStartExe = input;
 }
+
 - (BOOL)isNonStandardRun
 {
     return nonStandardRun;
@@ -73,6 +79,7 @@
 {
     nonStandardRun = input;
 }
+
 - (BOOL)isOpeningFiles
 {
     return openingFiles;
@@ -82,6 +89,7 @@
 {
     openingFiles = input;
 }
+
 - (NSString*)getWssCommand
 {
     return [wssCommand copy];
@@ -91,15 +99,7 @@
 {
     wssCommand = [input copy];
 }
-- (NSString*)getULimitNumber
-{
-    return [uLimitNumber copy];
-}
 
-- (void)setULimitNumber:(NSString*)input
-{
-    uLimitNumber = [input copy];
-}
 - (NSString*)getWineDebugLine
 {
     return [wineDebugLine copy];
@@ -109,6 +109,7 @@
 {
     wineDebugLine = [input copy];
 }
+
 - (NSArray*)getWinetricksCommands
 {
     return [NSArray arrayWithArray:winetricksCommands];
@@ -118,6 +119,7 @@
 {
     winetricksCommands = [NSArray arrayWithArray:input];
 }
+
 - (NSString*)getWineRunFile
 {
     return [wineRunFile copy];
@@ -127,4 +129,5 @@
 {
     wineRunFile = [input copy];
 }
+
 @end
