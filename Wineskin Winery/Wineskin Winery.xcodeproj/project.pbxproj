@@ -73,7 +73,6 @@
 		A89936DD127B283A006A7581 /* WineskinWineryUpdater */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = WineskinWineryUpdater; sourceTree = SOURCE_ROOT; };
 		A89E94A5153EE960006F38DB /* WineskinBanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WineskinBanner.jpg; sourceTree = "<group>"; };
 		A8A76BB014E46AB700F2C8D0 /* Winery.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Winery.icns; sourceTree = "<group>"; };
-		A8F15A3215CC47A10062CC71 /* Wineskin Winery.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Wineskin Winery.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				A1001B64242FEA0900308B79 /* ObjectiveC_Extension.xcodeproj */,
-				A8F15A3215CC47A10062CC71 /* Wineskin Winery.entitlements */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -318,7 +316,7 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1.8.4.3;
+				CURRENT_PROJECT_VERSION = 2.0.2;
 				DEVELOPMENT_TEAM = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
@@ -328,8 +326,8 @@
 				INFOPLIST_FILE = "Wineskin_Winery-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 1.8.4.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.15.4;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.unofficial.wineskinwinery;
 				PRODUCT_NAME = "Wineskin Winery";
 				PROVISIONING_PROFILE = "";
@@ -346,7 +344,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.8.4.3;
+				CURRENT_PROJECT_VERSION = 2.0.2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				GCC_MODEL_TUNING = G5;
@@ -355,8 +353,8 @@
 				INFOPLIST_FILE = "Wineskin_Winery-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 1.8.4.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.15.4;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.unofficial.wineskinwinery;
 				PRODUCT_NAME = "Wineskin Winery";
 				PROVISIONING_PROFILE = "";

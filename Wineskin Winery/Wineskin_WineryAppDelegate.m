@@ -16,12 +16,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    //TODO: Check if 10.15 but below 10.15.4 for this message, or keep disabled
-    //if (IS_SYSTEM_MAC_OS_10_15_OR_SUPERIOR && [VMMComputerInformation isSipEnabled]) {
-
-            //[VMMAlert showAlertOfType:VMMAlertTypeWarning withMessage:@"SIP needs to be disabled to run Wineskin ports in macOS 10.15+. To disable it: reboot your Mac into Recovery Mode by restarting your computer and holding down Command + R until the Apple logo appears on your screen.\n\nClick Utilities > Terminal.\n\nIn the Terminal window, type in \"csrutil disable\" and press Enter. Then restart your Mac. You should be able to use ports properly after that."];
-
-    //}
 	srand((unsigned int)time(NULL));
 	[waitWheel startAnimation:self];
 	[busyWindow makeKeyAndOrderFront:self];
@@ -32,9 +26,6 @@
     if (IS_SYSTEM_MAC_OS_10_15_OR_SUPERIOR) {
         [hideXQuartzEnginesCheckBox setEnabled:NO];
     }
-    
-    //pathToWineBinFolder = [NSString stringWithFormat:@"%@/SharedSupport/Wineskin/bin",contentsFold];
-    
 }
 
 - (void)systemCommand:(NSString *)commandToRun withArgs:(NSArray *)args
@@ -587,6 +578,8 @@
     [urlOutput setStringValue:[NSString stringWithFormat:@"file:///tmp/%@.tar.7z",[[engineWindowEngineList selectedItem] title]]];
     [fileName setStringValue:[[engineWindowEngineList selectedItem] title]];
     [fileNameDestination setStringValue:@"Engines"];
+    // Workaround explorer.exe hang with CX24.x
+    system([[NSString stringWithFormat:@"/usr/bin/xattr -drs com.apple.quarantine \"%@/Library/Application Support/Wineskin/Engines\"",NSHomeDirectory()] UTF8String]);
     [downloadingWindow makeKeyAndOrderFront:self];
     [addEngineWindow orderOut:self];
 }
@@ -818,6 +811,7 @@
 		[self makeFoldersAndFiles];
 		//move download into place
 		[[NSFileManager defaultManager] moveItemAtPath:[NSString stringWithFormat:@"/tmp/%@.app",[fileName stringValue]] toPath:[NSString stringWithFormat:@"%@/Library/Application Support/Wineskin/%@/%@.app",NSHomeDirectory(),[fileNameDestination stringValue],[fileName stringValue]] error:nil];
+        system([[NSString stringWithFormat:@"/usr/bin/xattr -drs com.apple.quarantine \%@/Library/Application Support/Wineskin/%@/%@.app",NSHomeDirectory(),[fileNameDestination stringValue],[fileName stringValue]] UTF8String]);
 		[window makeKeyAndOrderFront:self];
 		[busyWindow orderOut:self];
 	}
@@ -993,8 +987,10 @@
         // 777 the bundle
         system([[NSString stringWithFormat:@"chmod 777 \"/tmp/%@.app/Contents/SharedSupport/wine\"",[createWrapperName stringValue]] UTF8String]);
 
+        system([[NSString stringWithFormat:@"/usr/bin/xattr -drs com.apple.quarantine \"/tmp/%@.app\"",[createWrapperName stringValue]] UTF8String]);
+
         //initialize wrapper
-        system([[NSString stringWithFormat:@"\"/tmp/%@.app/Contents/MacOS/WineskinLauncher\" WSS-wineprefixcreate",[createWrapperName stringValue]] UTF8String]);
+        system([[NSString stringWithFormat:@"\"/tmp/%@.app/Contents/MacOS/wineskinlauncher\" WSS-wineprefixcreate",[createWrapperName stringValue]] UTF8String]);
 
 		//move wrapper to ~/Applications/Wineskin
 		[fm moveItemAtPath:[NSString stringWithFormat:@"/tmp/%@.app",[createWrapperName stringValue]] toPath:[NSString stringWithFormat:@"%@/Applications/Wineskin/%@.app",NSHomeDirectory(),[createWrapperName stringValue]] error:nil];
