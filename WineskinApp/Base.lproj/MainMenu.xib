@@ -1879,7 +1879,7 @@ DQ
                                     <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" id="985">
                                         <font key="font" metaFont="miniSystem"/>
                                         <string key="title">These are what is available installed on your machine.  To get more engines, install them with Unofficial Wineskin Winery, or manually download them from the Unofficial Wineskin website 
-(https://github.com/Gcenx/WineskinServer/)</string>
+(https://github.com/The-Wineskin-Project/WineskinServer/)</string>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
@@ -2514,7 +2514,7 @@ Help is available on the main website
                                                 </paragraphStyle>
                                             </attributes>
                                         </fragment>
-                                        <fragment content="https://github.com/Gcenx/WineskinServer">
+                                        <fragment content="https://github.com/The-Wineskin-Project/WineskinServer">
                                             <attributes>
                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Helvetica"/>
@@ -2703,7 +2703,7 @@ For more information see
                                                 </paragraphStyle>
                                             </attributes>
                                         </fragment>
-                                        <fragment content="https://github.com/Gcenx/WineskinServer">
+                                        <fragment content="https://github.com/The-Wineskin-Project/WineskinServer">
                                             <attributes>
                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Helvetica"/>

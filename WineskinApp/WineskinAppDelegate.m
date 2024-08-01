@@ -273,7 +273,7 @@ NSFileManager *fm;
 
 - (IBAction)wineskinWebsiteButtonPressed:(id)sender
 {
-	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/Gcenx/WineskinServer/"]];
+	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/The-Wineskin-Project/WineskinServer/"]];
 }
 
 - (IBAction)installWindowsSoftwareButtonPressed:(id)sender
@@ -533,7 +533,7 @@ NSFileManager *fm;
     // Check for winetricks, if missing download
     if (![fm fileExistsAtPath:[NSString stringWithFormat:@"%@/Contents/Resources/winetricks",[[NSBundle mainBundle] bundlePath]]]) {
         //Get the URL where winetricks is located
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://raw.githubusercontent.com/Gcenx/WineskinServer/master/WineskinWinetricks/Location.txt?%@",[[NSNumber numberWithLong:rand()] stringValue]]];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://raw.githubusercontent.com/The-Wineskin-Project/WineskinServer/main/WineskinWinetricks/Location.txt?%@",[[NSNumber numberWithLong:rand()] stringValue]]];
         NSString *urlWhereWinetricksIs = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding timeoutInterval:5];
         urlWhereWinetricksIs = [urlWhereWinetricksIs stringByReplacingOccurrencesOfString:@"\n" withString:@""]; //remove \n
 
@@ -1140,7 +1140,7 @@ NSFileManager *fm;
 - (IBAction)winetricksUpdateButtonPressed:(id)sender
 {
     //Get the URL where winetricks is located
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://raw.githubusercontent.com/Gcenx/WineskinServer/master/WineskinWinetricks/Location.txt?%@",[[NSNumber numberWithLong:rand()] stringValue]]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://raw.githubusercontent.com/The-Wineskin-Project/WineskinServer/main/WineskinWinetricks/Location.txt?%@",[[NSNumber numberWithLong:rand()] stringValue]]];
     NSString *urlWhereWinetricksIs = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding timeoutInterval:5];
 
 	urlWhereWinetricksIs = [urlWhereWinetricksIs stringByReplacingOccurrencesOfString:@"\n" withString:@""]; //remove \n

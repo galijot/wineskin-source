@@ -515,11 +515,11 @@ For more information see
                                                 </paragraphStyle>
                                             </attributes>
                                         </fragment>
-                                        <fragment content="https://github.com/Gcenx/WineskinServer">
+                                        <fragment content="https://github.com/The-Wineskin-Project/WineskinServer">
                                             <attributes>
                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Helvetica"/>
-                                                <url key="NSLink" string="https://github.com/Gcenx/WineskinServer/"/>
+                                                <url key="NSLink" string="https://github.com/The-Wineskin-Project/WineskinServer/"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" allowsDefaultTighteningForTruncation="NO">
                                                     <tabStops>
                                                         <textTab alignment="left" location="36">
@@ -704,12 +704,12 @@ Help is available on the main website
                                                 </paragraphStyle>
                                             </attributes>
                                         </fragment>
-                                        <fragment content="https://github.com/Gcenx/WineskinServer">
+                                        <fragment content="https://github.com/The-Wineskin-Project/WineskinServer">
                                             <attributes>
                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="12" name="Helvetica"/>
-                                                <url key="NSLink" string="https://github.com/Gcenx/WineskinServer/"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" allowsDefaultTighteningForTruncation="NO">
+                                                <url key="NSLink" string="https://github.com/The-Wineskin-Project/WineskinServer/"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0">
                                                     <tabStops>
                                                         <textTab alignment="left" location="36">
                                                             <options/>
