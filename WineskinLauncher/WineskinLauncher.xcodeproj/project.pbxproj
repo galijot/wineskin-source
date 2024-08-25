@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A12A7F01256D50D600857FF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A12A7F00256D50D600857FF7 /* main.m */; };
-		A1A1FB4428F068530036F1F3 /* ObjectiveC_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12A7F0D256D514600857FF7 /* ObjectiveC_Extension.framework */; };
-		A1A1FB4528F068530036F1F3 /* ObjectiveC_Extension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A12A7F0D256D514600857FF7 /* ObjectiveC_Extension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1DB8DC92570A16600631D3F /* WineskinLauncherAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DB8DC82570A16600631D3F /* WineskinLauncherAppDelegate.m */; };
 		A1DB8DD02570A18300631D3F /* NSPortManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DB8DCA2570A18200631D3F /* NSPortManager.m */; };
 		A1DB8DD12570A18300631D3F /* NSWineskinEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DB8DCD2570A18300631D3F /* NSWineskinEngine.m */; };
@@ -20,23 +18,6 @@
 		A1DB8DDE2570A1A500631D3F /* NSFileManager+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DB8DDC2570A1A500631D3F /* NSFileManager+Extension.m */; };
 		A1DB8DE12570A25800631D3F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DB8DE02570A25700631D3F /* Cocoa.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A12A7F0C256D514600857FF7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A12A7F07256D514600857FF7 /* ObjectiveC_Extension.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4E6C51071F7E8EB700A187E9;
-			remoteInfo = ObjectiveC_Extension;
-		};
-		A12A7F0E256D514600857FF7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A12A7F07256D514600857FF7 /* ObjectiveC_Extension.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4E6C51101F7E8EB700A187E9;
-			remoteInfo = ObjectiveC_ExtensionTests;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A12A7EFB256D50D600857FF7 /* CopyFiles */ = {
@@ -54,7 +35,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A1A1FB4528F068530036F1F3 /* ObjectiveC_Extension.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,7 +44,6 @@
 /* Begin PBXFileReference section */
 		A12A7EFD256D50D600857FF7 /* wineskinlauncher */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = wineskinlauncher; sourceTree = BUILT_PRODUCTS_DIR; };
 		A12A7F00256D50D600857FF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A12A7F07256D514600857FF7 /* ObjectiveC_Extension.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveC_Extension.xcodeproj; path = ../../ObjectiveC_Extension/ObjectiveC_Extension.xcodeproj; sourceTree = "<group>"; };
 		A1DB8DC72570A16600631D3F /* WineskinLauncherAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WineskinLauncherAppDelegate.h; sourceTree = "<group>"; };
 		A1DB8DC82570A16600631D3F /* WineskinLauncherAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WineskinLauncherAppDelegate.m; sourceTree = "<group>"; };
 		A1DB8DCA2570A18200631D3F /* NSPortManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSPortManager.m; sourceTree = "<group>"; };
@@ -90,7 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1A1FB4428F068530036F1F3 /* ObjectiveC_Extension.framework in Frameworks */,
 				A1DB8DE12570A25800631D3F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,7 +79,6 @@
 		A12A7EF4256D50D600857FF7 = {
 			isa = PBXGroup;
 			children = (
-				A12A7F07256D514600857FF7 /* ObjectiveC_Extension.xcodeproj */,
 				A1DB8DBF25709E4A00631D3F /* Classes */,
 				A1DB8DC625709EB600631D3F /* Other Sources */,
 				A12A7F10256D514F00857FF7 /* Frameworks */,
@@ -113,15 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				A12A7EFD256D50D600857FF7 /* wineskinlauncher */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A12A7F08256D514600857FF7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A12A7F0D256D514600857FF7 /* ObjectiveC_Extension.framework */,
-				A12A7F0F256D514600857FF7 /* ObjectiveC_ExtensionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -244,35 +212,12 @@
 			mainGroup = A12A7EF4256D50D600857FF7;
 			productRefGroup = A12A7EFE256D50D600857FF7 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = A12A7F08256D514600857FF7 /* Products */;
-					ProjectRef = A12A7F07256D514600857FF7 /* ObjectiveC_Extension.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				A12A7EFC256D50D600857FF7 /* wineskinlauncher */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		A12A7F0D256D514600857FF7 /* ObjectiveC_Extension.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ObjectiveC_Extension.framework;
-			remoteRef = A12A7F0C256D514600857FF7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A12A7F0F256D514600857FF7 /* ObjectiveC_ExtensionTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ObjectiveC_ExtensionTests.xctest;
-			remoteRef = A12A7F0E256D514600857FF7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A12A7EF9256D50D600857FF7 /* Sources */ = {
