@@ -13,30 +13,12 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		A1001B6D242FEA1000308B79 /* ObjectiveC_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1001B6A242FEA0900308B79 /* ObjectiveC_Extension.framework */; };
-		A1001B6E242FEA1000308B79 /* ObjectiveC_Extension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1001B6A242FEA0900308B79 /* ObjectiveC_Extension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1DD87612495907800E4D0DE /* 7za in Resources */ = {isa = PBXBuildFile; fileRef = A1DD87602495906B00E4D0DE /* 7za */; };
 		A89936DE127B283A006A7581 /* WineskinWineryUpdater in Resources */ = {isa = PBXBuildFile; fileRef = A89936DD127B283A006A7581 /* WineskinWineryUpdater */; };
 		A89E94A6153EE960006F38DB /* WineskinBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A89E94A5153EE960006F38DB /* WineskinBanner.jpg */; };
 		A8A76BB114E46AB700F2C8D0 /* Winery.icns in Resources */ = {isa = PBXBuildFile; fileRef = A8A76BB014E46AB700F2C8D0 /* Winery.icns */; };
+		C073C6B32C7B9E3D00EB7E31 /* ObjectiveC_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17F79DF23DE4345006FF8D2 /* ObjectiveC_Extension.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A1001B69242FEA0900308B79 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1001B64242FEA0900308B79 /* ObjectiveC_Extension.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4E6C51071F7E8EB700A187E9;
-			remoteInfo = ObjectiveC_Extension;
-		};
-		A1001B6B242FEA0900308B79 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1001B64242FEA0900308B79 /* ObjectiveC_Extension.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4E6C51101F7E8EB700A187E9;
-			remoteInfo = ObjectiveC_ExtensionTests;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A1001B6F242FEA1100308B79 /* Embed Frameworks */ = {
@@ -45,7 +27,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A1001B6E242FEA1000308B79 /* ObjectiveC_Extension.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,7 +46,6 @@
 		4E45371F20E7DA16005D794E /* NSWineskinEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSWineskinEngine.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Wineskin_Winery-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Wineskin_Winery-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Wineskin Winery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wineskin Winery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1001B64242FEA0900308B79 /* ObjectiveC_Extension.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveC_Extension.xcodeproj; path = ../../ObjectiveC_Extension/ObjectiveC_Extension.xcodeproj; sourceTree = "<group>"; };
 		A17F79DF23DE4345006FF8D2 /* ObjectiveC_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectiveC_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A81DBF24A7B81A00062104 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A1A81DC124A7B81F00062104 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -80,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1001B6D242FEA1000308B79 /* ObjectiveC_Extension.framework in Frameworks */,
+				C073C6B32C7B9E3D00EB7E31 /* ObjectiveC_Extension.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,7 +108,6 @@
 		29B97314FDCFA39411CA2CEA /* Wineskin Winery */ = {
 			isa = PBXGroup;
 			children = (
-				A1001B64242FEA0900308B79 /* ObjectiveC_Extension.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -169,15 +148,6 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A1001B65242FEA0900308B79 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A1001B6A242FEA0900308B79 /* ObjectiveC_Extension.framework */,
-				A1001B6C242FEA0900308B79 /* ObjectiveC_ExtensionTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,35 +198,12 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Wineskin Winery */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = A1001B65242FEA0900308B79 /* Products */;
-					ProjectRef = A1001B64242FEA0900308B79 /* ObjectiveC_Extension.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* Wineskin Winery */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		A1001B6A242FEA0900308B79 /* ObjectiveC_Extension.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ObjectiveC_Extension.framework;
-			remoteRef = A1001B69242FEA0900308B79 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A1001B6C242FEA0900308B79 /* ObjectiveC_ExtensionTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ObjectiveC_ExtensionTests.xctest;
-			remoteRef = A1001B6B242FEA0900308B79 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D1107290486CEB800E47090 /* Resources */ = {
