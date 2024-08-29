@@ -17,6 +17,8 @@
 		A1DB8DDB2570A19300631D3F /* NSPathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DB8DD82570A19300631D3F /* NSPathUtilities.m */; };
 		A1DB8DDE2570A1A500631D3F /* NSFileManager+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DB8DDC2570A1A500631D3F /* NSFileManager+Extension.m */; };
 		A1DB8DE12570A25800631D3F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DB8DE02570A25700631D3F /* Cocoa.framework */; };
+		C0F61DC02C80FDD600341CFC /* ObjectiveC_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F61DBF2C80FDD600341CFC /* ObjectiveC_Extension.framework */; };
+		C0F61DC12C80FDD600341CFC /* ObjectiveC_Extension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0F61DBF2C80FDD600341CFC /* ObjectiveC_Extension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +37,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				C0F61DC12C80FDD600341CFC /* ObjectiveC_Extension.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +65,7 @@
 		A1DB8DDD2570A1A500631D3F /* NSFileManager+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Extension.h"; sourceTree = "<group>"; };
 		A1DB8DDF2570A1B600631D3F /* WineskinLauncher_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WineskinLauncher_Prefix.pch; sourceTree = "<group>"; };
 		A1DB8DE02570A25700631D3F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C0F61DBF2C80FDD600341CFC /* ObjectiveC_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectiveC_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F61DC02C80FDD600341CFC /* ObjectiveC_Extension.framework in Frameworks */,
 				A1DB8DE12570A25800631D3F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +102,7 @@
 		A12A7F10256D514F00857FF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C0F61DBF2C80FDD600341CFC /* ObjectiveC_Extension.framework */,
 				A1DB8DE02570A25700631D3F /* Cocoa.framework */,
 			);
 			name = Frameworks;
